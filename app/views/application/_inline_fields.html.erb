@@ -1,0 +1,8 @@
+<%frame_id = dom_id(form.object, "#{attribute}_turbo_frame")%>
+  <%= turbo_frame_tag frame_id, class: "contents" do %>
+    <%= yield %>
+    <%= form.button class: "inline-action" do%>
+      Save <%= form.object.class.human_attribute_name(attribute)%>
+    <%end%>
+  <%= link_to 'Cancel', form.object, class: "inline-action" %>
+<%end%>

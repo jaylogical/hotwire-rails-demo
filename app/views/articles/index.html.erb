@@ -1,0 +1,6 @@
+<% @articles.each do |article| %>
+  <%= link_to article.name, article %>
+  <br>
+  Total Articles: <%= @articles.count%>
+<% end %>
+<%= link_to 'New Article', new_article_path %>
