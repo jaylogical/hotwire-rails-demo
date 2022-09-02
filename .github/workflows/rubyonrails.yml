@@ -50,3 +50,5 @@ jobs:
       # Add or replace any other lints here
       - name: RuboCop Linter Action
         uses: andrewmcodes/rubocop-linter-action@v3.3.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
