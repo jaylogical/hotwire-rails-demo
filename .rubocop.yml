@@ -2,5 +2,5 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 Style/StringLiterals:
   Enabled: false
-Layout/SpaceInsidePercentLiteralDelimiters
+Layout/SpaceInsidePercentLiteralDelimiters:
   Enabled: false
