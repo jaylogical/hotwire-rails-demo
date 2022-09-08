@@ -4,3 +4,7 @@ Style/StringLiterals:
   Enabled: false
 Layout/SpaceInsidePercentLiteralDelimiters:
   Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
