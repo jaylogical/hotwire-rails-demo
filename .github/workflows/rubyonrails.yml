@@ -38,6 +38,10 @@ jobs:
       - name: Run tests
         run: bin/rake > public/test.txt
       
+      - name: step 1
+        ## Reference your environment variables
+        run: echo "The API key is:${{secrets.STRIPE_KEY}}"
+      
       - name: Upload rspec results
         uses: actions/upload-artifact@master
         if: always()
